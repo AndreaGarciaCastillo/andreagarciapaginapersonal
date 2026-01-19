@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Servicios | Mi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="home">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="brand">
+            <img
+              src="img/logo.jpg"
+              alt="Logo de Andrea García Castillo"
+              class="brand-logo"
+            />
+          </a>
+
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+          </button>
+
+          <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="sobre-mi.html" class="nav-link">Sobre mí</a>
+            <a href="servicios.html" class="nav-link active">Servicios</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <section class="cards-section">
+          <h1 class="section-title">En qué puedo ayudarte</h1>
+
+          <div class="services-grid">
+            <!-- Servicio 1 -->
+            <article class="card service-card">
+              <figure class="service-image">
+                <img src="img/t1.jpg" alt="Terapia individual adulta" />
+              </figure>
+              <h2>Terapia individual adulta</h2>
+              <button
+                class="btn btn-primary  service-btn"
+                data-modal-id="modal-service1"
+              >
+                Más información
+              </button>
+            </article>
+
+            <!-- Servicio 2 -->
+            <article class="card service-card">
+              <figure class="service-image">
+                <img src="img/t2.jpg" alt="Terapia infantil" />
+              </figure>
+              <h2>Terapia infantil</h2>
+              <button class="btn btn-primary service-btn"
+                data-modal-id="modal-service2"
+              >
+                Más información
+              </button>
+            </article>
+
+            <!-- Servicio 3 -->
+            <article class="card service-card">
+              <figure class="service-image">
+                <img src="img/t3.jpg" alt="Terapia juvenil" />
+              </figure>
+              <h2>Terapia juvenil</h2>
+              <button
+                class="btn btn-primary  service-btn"
+                data-modal-id="modal-service3"
+              >
+                Más información
+              </button>
+            </article>
+          </div>
+        </section>
+      </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Andrea García Castillo. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+    </div>
+
+    <!-- Backdrop común -->
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+
+    <!-- Modal 1 -->
+    <section class="modal" id="modal-service1" aria-hidden="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Más sobre terapia individual adulta</h2>
+          <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+        </div>
+
+        <p>
+          La vida adulta nos enfrenta a un ritmo que, a veces, cuesta seguir.
+          Responsabilidades, decisiones, pérdidas, expectativas, relaciones,
+          cambios… Todo se entrelaza y nos exige estar bien, incluso cuando por
+          dentro sentimos lo contrario. A menudo intentamos sostenernos solos,
+          cumplir con todo y con todos, sin darnos el permiso de parar y
+          escuchar lo que realmente necesitamos.
+        </p>
+        <p>
+          Pero incluso los adultos que “pueden con todo” también se agotan,
+          también se rompen, también sienten miedo, culpa, tristeza o confusión.
+          Hay momentos en los que la ansiedad se hace demasiado presente, en los
+          que el pasado sigue doliendo, en los que la autoestima se resiente o
+          en los que simplemente dejamos de reconocernos.
+        </p>
+        <p>
+          La psicoterapia ofrece un espacio seguro para entender lo que nos está
+          pasando, conectar con nuestras emociones y encontrar nuevas maneras de
+          afrontar aquello que nos bloquea. Un lugar donde poder hablar sin
+          filtros, sin juicios y sin tener que sostener máscaras. A través del
+          acompañamiento terapéutico, es posible recuperar el equilibrio,
+          fortalecer el bienestar emocional y reconstruir una relación más
+          amable con uno mismo. Un proceso que no solo alivia, sino que
+          transforma.
+        </p>
+        <p>¿En qué te puedo ayudar?</p>
+        <ul class="sublista">
+                <li>Ansiedad</li>
+                <li>Depresión</li>
+                <li>Baja autoestima</li>
+                <li>Gestión del estrés</li>
+                <li>Gestión emocional</li>
+                <li>Acompañamiento en situaciones difíciles como acoso laboral, discriminación… </li>
+                <li>Gestión del duelo</li>
+                <li>Sexualidad</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Modal 2 -->
+    <section class="modal" id="modal-service2" aria-hidden="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Más sobre terapia infantil</h2>
+          <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+        </div>
+        <p>
+          La infancia es una etapa llena de descubrimientos, aprendizajes y primeras experiencias que dan forma a la manera en que los niños entienden el mundo. Cada avance, cada logro y cada emoción construyen poco a poco su forma de relacionarse, de conocerse y de sentirse seguros.
+        </p>
+        <p>
+          Pero crecer no siempre es sencillo. A veces aparecen miedos que paralizan, rabietas que desbordan, dificultades en el colegio, problemas para hacer amigos, cambios familiares que generan inseguridad o emociones que los niños aún no saben nombrar. Y aunque intentan adaptarse con sus propios recursos, en ocasiones se sienten confundidos, frustrados o sobrepasados por lo que están viviendo.
+        </p>
+        <p>
+          Para las familias, acompañar estos momentos tampoco es fácil. Puede resultar doloroso ver que un hijo sufre, se frustra o no encuentra la manera de expresar lo que le ocurre. A veces aparece la culpa, la preocupación o la sensación de no saber qué más hacer. 
+        </p>
+        <p>
+          Por eso, la psicoterapia infantil ofrece un espacio seguro donde los niños pueden expresarse, comprender lo que sienten y aprender nuevas formas de afrontar aquello que les cuesta. A través del vínculo y de un acompañamiento respetuoso, encuentran nuevas formas de comunicarse, desarrollan herramientas emocionales y recuperan la seguridad para seguir creciendo. Y las familias también encuentran apoyo, comprensión y orientación para acompañarles de una manera más calmada y conectada.
+        </p>
+        <p>¿En qué te puedo ayudar?
+            <ul class="sublista">
+                    <li>Gestión de rabietas</li>
+                    <li>Identificación y gestión emocional</li>
+                    <li>Baja autoestima, promover tu autoconocimiento y desarrollo personal</li>
+                    <li>Comportamiento desafiante</li>
+                    <li>Dificultades escolares </li>
+                    <li>Dificultades relacionales</li>
+                    <li>Ansiedad infantil</li>
+                    <li>Depresión infantil</li>
+                    <li>Acompañamiento y gestión de situaciones complicadas (divorcio de los padres, fallecimiento de algún familiar, discriminación…) </li>
+                    <li>Gestión de miedos (oscuridad, quedarse solos, animales…)</li>
+            </ul>
+        </p>
+      </div>
+    </section>
+
+    <!-- Modal 3 -->
+    <section class="modal" id="modal-service3" aria-hidden="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Más sobre terapia juvenil</h2>
+          <button class="modal-close" type="button" aria-label="Cerrar">×</button>
+        </div>
+        <p>
+          La adolescencia es un momento de la vida en el que todo cambia: el cuerpo, la forma de sentir, la manera de relacionarse con los demás… Poco a poco, los jóvenes empiezan a descubrir quiénes son y quiénes quieren llegar a ser. En ese proceso, el grupo de iguales adquiere un papel fundamental, y los distintos escenarios de su vida —el colegio, la familia, las relaciones— cambian a un ritmo que a veces resulta difícil de sostener.
+        </p>
+        <p>
+          Para muchos adolescentes, este camino puede estar lleno de retos: presión social por encajar, inseguridades, conflictos familiares, dificultades académicas, experiencias de acoso, relaciones que duelen... Todo ello puede generar un impacto profundo en su bienestar y hacer que el adolescente se sienta perdido, solo o incomprendido. Además, para las familias, acompañar estos cambios tampoco es sencillo, apareciendo a veces la frustración, la preocupación y el miedo a no estar a la altura.
+        </p>
+        <p>
+          En este contexto, la psicoterapia ofrece un espacio seguro para comprender lo que está ocurriendo, gestionar las emociones y fortalecer las herramientas necesarias para recuperar el equilibrio. 
+        </p>
+        <p>
+          Por eso, la psicoterapia se convierte en un refugio y un puente. Un lugar seguro donde poder expresar lo que duele, comprender lo que está ocurriendo, gestionar las emociones y fortalecer las herramientas necesarias para recuperar el equilibrio. Un espacio que ayuda al adolescente a reencontrarse consigo mismo y a la familia, promoviendo una convivencia más sana y un acompañamiento más consciente.
+        </p>
+        <p>¿En qué te puedo ayudar?
+            <ul class="sublista">
+                    <li>Ansiedad</li>
+                    <li>Depresión</li>
+                    <li>Baja autoestima, promover tu autoconocimiento y desarrollo personal</li>
+                    <li>Manejo del estrés</li>
+                    <li>Dificultades en las relaciones, promoviendo asertividad y habilidades sociales</li>
+                    <li>Dificultades escolares como bullying</li>
+                    <li>Acompañamiento y gestión de situaciones complicadas (divorcio de los padres, fallecimiento de algún familiar, discriminación…) </li>
+                    <li>Sexualidad</li>
+                    <li>Encontrar y expresar tu orientación sexual y de género</li>
+                    <li>Gestión emocional</li>
+            </ul>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script></script>
+  </body>
+</html>
